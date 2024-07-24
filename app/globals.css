@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  @apply duration-300 transition-all scroll-smooth;
+}
+
+.no-scrolling {
+  scrollbar-width: none;
+}
+
+.setbody {
+  @apply flex flex-col w-full items-center;
+}
+
+.setbody > div {
+  @apply w-full h-full;
+}
